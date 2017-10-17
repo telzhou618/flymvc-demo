@@ -37,5 +37,4 @@ public class UserController {
 		System.out.println(response);
 		return new User("2",name,"xxxxx",20);
 	}
-
 }
