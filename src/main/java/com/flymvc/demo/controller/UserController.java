@@ -5,6 +5,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.flymvc.anno.ResponsJson;
 import com.flymvc.config.Fly;
+import com.flymvc.core.Req;
 import com.flymvc.demo.model.User;
 
 public class UserController {
@@ -42,5 +43,10 @@ public class UserController {
 	@ResponsJson
 	public String st() {
 		return Fly.me().getConfig().getViewPath();
+	}
+	
+	@ResponsJson
+	public Integer req(Req req) {
+		return req.getAttrToInt("age");
 	}
 }
