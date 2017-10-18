@@ -4,8 +4,6 @@ import com.flymvc.core.BootStrap;
 import com.flymvc.demo.controller.RoleController;
 import com.flymvc.demo.controller.UserController;
 import com.flymvc.plugin.Plugins;
-import com.flymvc.render.FreeMarkerRender;
-import com.flymvc.render.Render;
 import com.flymvc.route.Routes;
 
 public class App extends BootStrap{
@@ -21,11 +19,5 @@ public class App extends BootStrap{
 	@Override
 	public void plugin(Plugins plugins) {
 		// TODO Auto-generated method stub
-	}
-	
-	@Override
-	public Render render() {
-		// TODO Auto-generated method stub
-		return new FreeMarkerRender();
 	}
 }

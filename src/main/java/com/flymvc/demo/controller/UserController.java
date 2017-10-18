@@ -9,8 +9,8 @@ import com.flymvc.demo.model.User;
 
 public class UserController {
 
-	public String list() {
-		System.out.println("user:list");
+	public String list(HttpServletRequest request) {
+		request.setAttribute("name","zhangsanxxx");
 		return "user/list";
 	}
 
