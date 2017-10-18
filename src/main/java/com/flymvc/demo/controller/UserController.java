@@ -41,6 +41,6 @@ public class UserController {
 	
 	@ResponsJson
 	public String st() {
-		return Fly.me().getFlyConfig().getViewPath();
+		return Fly.me().getConfig().getViewPath();
 	}
 }
