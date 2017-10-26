@@ -4,6 +4,9 @@ import com.flymvc.BootStrap;
 import com.flymvc.config.Config;
 import com.flymvc.demo.controller.IndexController;
 import com.flymvc.demo.controller.UserController;
+import com.flymvc.demo.interceptor.LoginInterceptor;
+import com.flymvc.demo.interceptor.PayInterceptor;
+import com.flymvc.interceptor.Interceptors;
 import com.flymvc.plugin.Plugins;
 import com.flymvc.route.Routes;
 
@@ -34,4 +37,14 @@ public class App extends BootStrap{
 	public void plugin(Plugins plugins) {
 		
 	}
+
+	@Override
+	public void interceptor(Interceptors interceptors) {
+		
+		interceptors.add(new LoginInterceptor());
+		interceptors.add(new PayInterceptor());
+		
+	}
+	
+	
 }
