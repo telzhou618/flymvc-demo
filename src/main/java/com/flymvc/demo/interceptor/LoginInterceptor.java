@@ -3,9 +3,9 @@ package com.flymvc.demo.interceptor;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.flymvc.bean.ModelRender;
 import com.flymvc.exception.InterceptorException;
 import com.flymvc.interceptor.AbstractInterceptor;
-import com.flymvc.interceptor.ModelRender;
 
 public class LoginInterceptor extends AbstractInterceptor{
 

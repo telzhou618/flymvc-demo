@@ -1,6 +1,6 @@
 package com.flymvc.demo.controller;
 
-import com.flymvc.Req;
+import com.flymvc.bean.Req;
 
 public class IndexController {
 

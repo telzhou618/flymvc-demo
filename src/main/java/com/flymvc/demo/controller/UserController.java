@@ -3,8 +3,8 @@ package com.flymvc.demo.controller;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.flymvc.Req;
-import com.flymvc.anno.RespJson;
+import com.flymvc.annotation.RespJson;
+import com.flymvc.bean.Req;
 import com.flymvc.demo.model.User;
 import com.flymvc.demo.render.JavaScriptRender;
 
