@@ -16,9 +16,10 @@ public class UserController {
 	 * @param age
 	 * @return
 	 */
-	public String test(String name,Integer age){
+	public String test(String name,Integer age,Boolean bool){
 		System.out.println(name);
 		System.out.println(age);
+		System.out.println(bool);
 		return "user/test";
 	}
 	/**
