@@ -18,6 +18,11 @@
 			<artifactId>flymvc</artifactId>
 			<version>${flymvc.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.37</version>
+		</dependency>
 
 	</dependencies>
 	<build>

@@ -3,13 +3,28 @@ package com.flymvc.demo.controller;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.flymvc.annotation.RespJson;
+import com.flymvc.annotation.Rson;
 import com.flymvc.bean.Req;
 import com.flymvc.demo.model.User;
 import com.flymvc.demo.render.JavaScriptRender;
 
 public class UserController {
-
+	
+	/**
+	 * 新增用户
+	 * @return
+	 */
+	@Rson
+	public String add(){
+		User user = new User();
+		user.setId(2);
+		user.setAge(18);
+		user.setName("zhangsan");
+		user.setPassword("123456");
+		return user.save() ? "success" : "failure";
+	}
+	
+	
 	/**
 	 * 接收参数
 	 * @param name
@@ -47,9 +62,9 @@ public class UserController {
 	/**
 	 * 返回Json数据
 	 */
-	@RespJson
+	@Rson
 	public User json(){
-		return new User("1", "zhangsan", "xxxxx", 18);
+		return new User(1, "zhangsan", "xxxxx", 18);
 	}
 	
 	/**

@@ -2,6 +2,7 @@ package com.flymvc.demo;
 
 import com.flymvc.BootStrap;
 import com.flymvc.config.Config;
+import com.flymvc.db.SqlDb;
 import com.flymvc.demo.controller.IndexController;
 import com.flymvc.demo.controller.UserController;
 import com.flymvc.demo.interceptor.LoginInterceptor;
@@ -17,7 +18,7 @@ public class App extends BootStrap{
 	 */
 	@Override
 	public void config(Config config) {
-		
+		SqlDb.init("jdbc:mysql://127.0.0.1:3306/test", "root", "root");
 	}
 
 	/**
